@@ -50,6 +50,36 @@
 			</div>
 		</section>
 
+		<section class="circle">
+
+			<div class="container">
+
+				<div class="row justify-content-center">
+
+					<div class="col-6">
+
+						<form>
+
+							<fieldset class="form-row">
+								
+								<div class="col-12">
+									<label class="u-font__weight--bold" for="">
+										Raio:
+									</label>
+									<input
+									class="form-control"
+									type="text"
+									name=""
+									id=""
+									placeholder="Placeholder">
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<div class="m-5">
 
 			<?php
