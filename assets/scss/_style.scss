@@ -1,4 +1,4 @@
-body {
+html {
 	scroll-behavior: smooth;
 }
 
@@ -16,6 +16,7 @@ body {
 	border-radius: 5px;
 	overflow: hidden;
 	position: relative;
+	color: #000;
 
 	&::before {
 		content: '';

@@ -1,11 +1,9 @@
-(function () {
+(function ($) {
 	const choice = document.getElementsByClassName( 'js-choice' )
 	const sectionVisible = document.getElementsByClassName( 'js-section-visible' )
 
 	for(const i of choice) {
-		i.addEventListener( 'click', function() {
-			
-			window.scrollTo( 0, 3000 );
+		i.addEventListener( 'click', function() {			
 
 			for(const j of sectionVisible) {
 				if(this.dataset.value == j.dataset.value) {
@@ -18,4 +16,4 @@
 			}
 		})
 	}
-})()
+})(jQuery)
