@@ -1,0 +1,44 @@
+Negócio
+=======
+Calcular a área e perímetro de circunferências e retângulos
+
+
+Problema / Oportunidade
+=======================
+Um professor do ensino médio, gastar muito tempo para está calculando a circunfêrencia. Por meio disso, não conseguir abordar todos os assuntos necessários na mesma aula.
+
+Por que não usar aplicativos para calcular a circunferência?
+Professores não tem permissão para usar celulares durante as aulas.
+
+Por que não usar o computador que contem na sala de aula para acessar sites com calculadoras?
+Na sala de aula não tem acesso a internet
+
+Qual é a solução?
+A solução é instalar um sistema que possa calcular a circunfência dinamicamente.
+
+Stakeholders
+============
+- Professor
+
+
+Vocabulário de Negócio
+======================
+PI - Representa o valor da razão entre a circunferência de qualquer circulo e seu diâmetro.
+
+Atividades de Negócio
+=====================
+* AOO1 - Calcular a área e perímetro de circunferências e retângulos
+
+Processo de Negócio
+===================
+* A001 
+  O professor deve inserir os valores desejados para calcular a cincurferência e retângulos.
+
+Regras de Negócio
+=================
+* RN001 - O cálculo da área e perímetro de circunferências (área PI.R^2. perímetro 			  2.PI.R) e retângulos (área BASE.ALTURA. perímetro 2.(BASE+ALTURA)).
+
+Requisitos
+==========
+* RF001 - O sistema deve ter a opção se o usuário deseja calcular a circuferencia ou retângulo.
+* RF002 - O sistema deve ter entradas de valores para calcular a área e perímetro de circunferências e retângulos.
