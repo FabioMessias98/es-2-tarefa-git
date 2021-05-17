@@ -1,3 +1,5 @@
+<?php include 'circle.php'; ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
@@ -58,12 +60,14 @@
 
 					<div class="col-6">
 
-						<form>
+						<form method="POST" action="index.php" name="formToCalculateCircle">
 
 							<fieldset class="form-row">
 								
 								<div class="col-6">
-									<label class="u-font__weight--bold mb-2 pl-2" for="area">
+									<label 
+									class="u-font__weight--bold mb-2 pl-2" 
+									for="area">
 										Área
 									</label>
 									<input
@@ -75,7 +79,9 @@
 								</div>
 
 								<div class="col-6">
-									<label class="u-font__weight--bold mb-2 pl-2" for="raio">
+									<label 
+									class="u-font__weight--bold mb-2 pl-2" 
+									for="raio">
 										Raio:
 									</label>
 									<input
@@ -84,6 +90,13 @@
 									name="raio"
 									id="raio"
 									placeholder="Raio:">
+								</div>
+
+								<div class="col-4 mt-2">
+									<input 
+									class="btn btn-outline-dark"
+									type="submit" 
+									value="Enviar">
 								</div>
 							</fieldset>
 						</form>
@@ -95,10 +108,16 @@
 		<div class="m-5">
 
 			<?php
-				$raio = 5;
-				$result = 2 * 3.14 * $raio;
+				$pi = 3.14;
+				$circle = new Circle();
 
-				echo 'Perímetro: ' . $result;
+				if( isset($_POST['area']) ) 
+					$circle->setArea($_POST['area']);		
+				
+
+				$resultadoArea = $circle->calcularArea($circle->getArea(), $pi);
+
+				echo 'Resultado área: ' . $resultadoArea;
 			?>
 		</div>
 
