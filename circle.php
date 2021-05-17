@@ -24,4 +24,8 @@ class Circle {
 	public function calcularArea($area, $pi) {
 		return $pi * pow($area, 2);	
 	}
+
+	public function calcularPerimetro($raio, $pi) {
+		return 2 * $pi * $raio;
+	}
 }
